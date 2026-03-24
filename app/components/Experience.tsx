@@ -6,32 +6,58 @@ interface ExperienceCard {
   title: string;
   description: string;
   icon: string;
+  link: string;
 }
 
 const experienceCards: ExperienceCard[] = [
   {
     id: 1,
-    title: "WebHR - HR Management App",
-    description: "WebHR automates all of your company's HR processes such as Recruitment, Onboarding, Payroll, Time & Attendance, Leaves & PTO, Performance, and much more.",
+    title: "Rokumei Coffee",
+    description: "A modern coffee brand website designed to reflect warmth, elegance, and premium quality. The layout combines clean typography, earthy tones, and high-quality visuals to create an inviting and user-friendly experience. This project highlights my skills in UI/UX design, visual hierarchy, and responsive web layout.",
     icon: "/cards/card-1.png",
+    link: "https://github.com/Fadi786-tech/Rokumei-Coffee",
   },
   {
     id: 2,
-    title: "WebHR Kiosk - Time Clock Kiosk",
-    description: "WebHR Kiosk is a time clock kiosk that allows you to clock in and out of your work. It is a simple and easy to use app that allows you to clock in and out of your work.",
-    icon: "/cards/card-2.png",
+    title: "Jazzcash",
+    description: "A TypeScript + Express + MongoDB backend that replicates the core functionalities of the Jazzcash mobile wallet system, including authentication, money transfer, bill payments, mobile loads, and auto-payments — all with secure JWT authentication, file upload, and cron-based scheduling.",
+    icon: "/cards/card-3.png",
+    link: "https://github.com/Fadi786-tech/JazzcashClone",
   },
   {
     id: 3,
-    title: "Somezing - AI-Powered Agents",
-    description: "Somezing is a AI-Powered Agents to Automate Your Workflows. It is a simple and easy to use app that allows you to automate your workflows.",
-    icon: "/cards/card-3.png",
+    title: "User Management System",
+    description: "🔐 A full-stack User Management System built with TypeScript, Express.js, React, and MongoDB. Includes CRUD, JWT authentication, Zod validation, and role-based access for SuperAdmin, Admin, and User. Features secure password hashing, loading/error states, and a modern UI.",
+    icon: "/cards/card-4.png",
+    link: "https://github.com/Fadi786-tech/User-Management-System",
   },
   {
     id: 4,
-    title: "FileIT - File Sharing App",
-    description: "FileIT is a file sharing app that allows you to share files with your friends and family. It is a simple and easy to use app that allows you to share files with your friends and family.",
+    title: "Voice & Video Chat Application",
+    description: "Real-time chat application with video calling capabilities, built using the MERN stack (MongoDB, Express, React, Node.js) with WebSocket for real-time communication and WebRTC for peer-to-peer video calls.",
     icon: "/cards/card-4.png",
+    link: "https://github.com/Fadi786-tech/ChatApp",
+  },
+  {
+    id: 5,
+    title: "How Am I Driving? - Real Time Driver Monitoring System",
+    description: "A Flutter-based mobile application designed to monitor and analyze driver behavior in real time. The app continuously tracks speed, location, and sensor readings (accelerometer and gyroscope) to detect driving events such as overspeeding, sharp turns, hard braking, and geofence violations.",
+    icon: "/cards/card-2.png",
+    link: "https://github.com/Fadi786-tech/How-Am-I-Driving-FrontEnd",
+  },
+  {
+    id: 6,
+    title: "AI Gym Trainer Application",
+    description: "We propose a Flutter-based AI Gym Trainer app offering personalized workouts, nutrition guidance, fitness tracking, gamified motivation, reminders, schedules, alarms, offers, and subscriptions, ensuring professional quality, engagement, and strong user retention.",
+    icon: "/cards/card-1.png",
+    link: "https://github.com/Fadi786-tech/AI-Gym-Trainer-Application",
+  },
+  {
+    id: 7,
+    title: "Electronic Notice Board - Smart IoT-based Electronic Notice Board",
+    description: "A smart IoT-based Electronic Notice Board built with Flutter and ESP-32. It enables users to send, update, and delete messages wirelessly in real time via Wi-Fi. The ESP-32 displays messages on an LED/LCD board, replacing traditional notice boards with a modern, app-controlled solution.",
+    icon: "/cards/card-3.png",
+    link: "https://github.com/Fadi786-tech/Electronic-Notice-Board-FrontEnd",
   },
 ];
 
@@ -42,7 +68,7 @@ export default function Experience(): React.JSX.Element {
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
           Work Experience
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 [&>*:last-child:nth-child(odd)]:md:col-span-2 [&>*:last-child:nth-child(odd)]:md:max-w-md [&>*:last-child:nth-child(odd)]:md:mx-auto">
           {experienceCards.map((card) => (
             <div
               key={card.id}
@@ -65,7 +91,7 @@ export default function Experience(): React.JSX.Element {
                 {card.description}
               </p>
               <Link
-                href="https://ibiimemon.com/lab"
+                href={card.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors inline-block"

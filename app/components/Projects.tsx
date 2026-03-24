@@ -11,18 +11,32 @@ interface Project {
 const featuredProjects: Project[] = [
   {
     id: 1,
-    title: "NeuraWeb – Futuristic AI Website Landing Design",
-    description: "A sleek, dark-themed AI-powered landing page concept built in Figma. Designed for modern startups and futuristic digital products, it features glowing neon visuals, immersive UI, and a dynamic tone. The design encapsulates the cutting-edge possibilities of AI and tech, offering a glimpse into the future of online experiences for tech-forward companies.",
-    link: "https://www.figma.com/community/file/1441377868897233703/ai-website-landing-design",
-    image: "/projects/project-1.png",
+    title: "ROKUMEI COFFEE – Japanese Specialty Coffee E-Commerce",
+    description: "A sophisticated e-commerce website for ROKUMEI COFFEE, a specialty coffee shop established in Nara, Japan since 1974. The site features an elegant Japanese aesthetic with smooth animations, showcasing premium coffee products, craft coffee selections, and bakery items. Built with modern web technologies, it delivers a seamless shopping experience with product rankings, campaigns, and rich editorial content about coffee culture.",
+    link: "https://rokumei-coffee.vercel.app/",
+    image: "/projects/project-1 (2).png",
   },
   {
-    id: 2,
-    title: "Apple Vision Pro – HR Software Design",
-    description: "A futuristic HR software concept designed for Apple Vision Pro, built in Figma to reimagine attendance, leave tracking, and employee experience - all in one immersive interface.",
-   link: "https://www.figma.com/community/file/1371824014208363481/apple-vision-pro-hr-software-design",
+    id: 2, 
+    title: "Voice & Video Chat Application",
+    description: "A real-time chat application with video calling capabilities, built using the MERN stack (MongoDB, Express, React, Node.js) with WebSocket for real-time communication and WebRTC for peer-to-peer video calls.",
+   link: "https://chat-app-frontend-ten-mu.vercel.app",
     image: "/projects/project-2.png",
   },
+  {
+    id: 3, 
+    title: "Jazzcash Application",
+    description: "A TypeScript + Express + MongoDB backend that replicates the core functionalities of the Jazzcash mobile wallet system, including authentication, money transfer, bill payments, mobile loads, and auto-payments — all with secure JWT authentication, file upload, and cron-based scheduling.",
+   link: "https://jazzcash-clone-frontend.vercel.app",
+    image: "/projects/project-3.png",
+  },
+  {
+    id: 4, 
+    title: "User Management System",
+    description: "🔐 A full-stack User Management System built with TypeScript, Express.js, React, and MongoDB. Includes CRUD, JWT authentication, Zod validation, and role-based access for SuperAdmin, Admin, and User. Features secure password hashing, loading/error states, and a modern UI.",
+   link: "https://user-management-system-lake-rho.vercel.app/",
+    image: "/projects/project-4.png",
+  }
 ];
 
 export default function Projects(): React.JSX.Element {
@@ -86,14 +100,15 @@ export default function Projects(): React.JSX.Element {
 
                 {/* Image Content */}
                 <div className={`${isEven ? "lg:col-start-1 lg:row-start-1" : ""}`}>
-                  <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 p-2 lg:p-3 shadow-2xl">
+                  <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden bg-slate-950 p-2 lg:p-3 shadow-2xl">
                     <div className="relative w-full h-full rounded-lg overflow-hidden">
                       <Image
-                        src={project.image}
+                        src={`${project.image}?v=${Date.now()}`}
                         alt={project.title}
                         fill
                         sizes="(max-width: 1024px) 100vw, 50vw"
-                        className="object-cover"
+                        className="object-cover object-top"
+                        unoptimized
                       />
                     </div>
                   </div>

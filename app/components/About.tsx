@@ -4,7 +4,7 @@ export default function About(): React.JSX.Element {
 
   return (
     <section id="about" className="py-20 px-6">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-6xls">
         <div className="text-center mb-16">
           <p className="text-2xl max-w-6xl mx-auto">
             I&apos;m currently looking to join a <span className="text-purple-400">cross-functional team</span><br/> <span className="text-sm">that values 
