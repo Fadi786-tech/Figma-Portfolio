@@ -18,24 +18,24 @@ const featuredProjects: Project[] = [
   },
   {
     id: 2, 
-    title: "Voice & Video Chat Application",
-    description: "A real-time chat application with video calling capabilities, built using the MERN stack (MongoDB, Express, React, Node.js) with WebSocket for real-time communication and WebRTC for peer-to-peer video calls.",
-   link: "https://chat-app-frontend-ten-mu.vercel.app",
-    image: "/projects/project-2.png",
+    title: "Foodie Express",
+    description: "Foodie Express is a food delivery platform that allows users to order food from their favorite restaurants. It is a full-stack application built with Next.js, Tailwind CSS, and MongoDB.",
+   link: "https://foodie-express-beryl.vercel.app",
+    image: "/projects/project14.png",
   },
   {
     id: 3, 
     title: "Jazzcash Application",
     description: "A TypeScript + Express + MongoDB backend that replicates the core functionalities of the Jazzcash mobile wallet system, including authentication, money transfer, bill payments, mobile loads, and auto-payments — all with secure JWT authentication, file upload, and cron-based scheduling.",
    link: "https://jazzcash-clone-frontend.vercel.app",
-    image: "/projects/project-3.png",
+    image: "/projects/project13.png",
   },
   {
     id: 4, 
-    title: "User Management System",
-    description: "🔐 A full-stack User Management System built with TypeScript, Express.js, React, and MongoDB. Includes CRUD, JWT authentication, Zod validation, and role-based access for SuperAdmin, Admin, and User. Features secure password hashing, loading/error states, and a modern UI.",
-   link: "https://user-management-system-lake-rho.vercel.app/",
-    image: "/projects/project-4.png",
+    title: "Foodie Express Rider Portal",
+    description: "Foodie Express Rider Portal is a platform that allows riders to manage their deliveries and orders. It is a full-stack application built with Next.js, Tailwind CSS, and MongoDB.",
+   link: "https://foodie-express-rider-portal-xi.vercel.app",
+    image: "/projects/project16.png",
   }
 ];
 
